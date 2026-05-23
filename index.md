@@ -7,6 +7,9 @@ paginate: true
 style: |
   :root header {
     display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 48px;
     line-height: 48px;
@@ -15,10 +18,22 @@ style: |
     padding-left: 30px;
     margin: 0;
     background: linear-gradient(135deg, #003f88, #0056b3);
-    flex-shrink: 0;
+    z-index: 10;
   }
   :root header::after {
     display: none;
+  }
+  :root {
+    padding-top: 64px !important;
+    padding-bottom: 18px !important;
+  }
+  :root.homePage {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  :root.contents {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
   :root img {
     max-width: 100%;
@@ -26,6 +41,12 @@ style: |
     height: auto;
     display: block;
     margin: 10px auto;
+  }
+  :root .fig-caption {
+    text-align: center;
+    font-size: 16px;
+    color: #888;
+    margin-top: 4px;
   }
   :root.homePage img {
     height: 100px;
@@ -52,6 +73,34 @@ style: |
   }
   :root.homePage .footnote a {
     color: #fff;
+  }
+  :root .cols {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  :root .cols > div:first-child {
+    flex: 2;
+    min-width: 0;
+  }
+  :root .cols > div:last-child {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  :root .cols p {
+    margin: 0;
+    width: 100%;
+  }
+  :root .cols img {
+    width: 100%;
+    height: auto;
+    max-height: 380px;
+    display: block;
+    margin: 0;
   }
 ---
 
@@ -99,28 +148,42 @@ style: |
 <!-- _class: contentPage -->
 <!-- _header: "Part 1 总览" -->
 
+<div class="cols">
+<div>
+
 AI Agent 能力从浅到深，呈现阶梯式跃迁
 
-**第一层 · 对话问答** — DeepSeek / 豆包 / 千问 — 你问我答
+**第一层 · 对话问答** — 你问我答，自然语言交互
 
-**第二层 · 自动化工作流** — Coze 工作流 — 规范化标准任务
+**第二层 · 自动化工作流** — 固定流程节点化，一键搞定
 
-**第三层 · 自主 Agent** — Coze / Trae Solo — 自主规划·交互·收集
+**第三层 · 自主 Agent** — 自主规划，主动收集，动态决策
 
-**第四层 · 项目落地** — 理解需求 → 定制开发技术产品
+**第四层 · 项目落地** — 理解需求，定制开发技术产品
 
-**第五层 · 系统建设** — 可用的系统级解决方案
+**第五层 · 系统建设** — 完整可用的系统级解决方案
 
-**第六层 · 生活助理** — 全场景沟通·交流·规划·执行
+**第六层 · 生活助理** — 全场景协同，懂你帮你替你
 
 > 公式：AI Agent = 大脑(LLM) + 规划 + 记忆 + 工具使用
 
+</div>
+<div>
+
 ![](images/agent-layers.svg)
+
+<div class="fig-caption">图：AI Agent 六层能力阶梯</div>
+
+</div>
+</div>
 
 ---
 
 <!-- _class: contentPage -->
 <!-- _header: "1.1 初踏殿堂的体验——对话式AI" -->
+
+<div class="cols">
+<div>
 
 **核心产品**: DeepSeek · 豆包 · 通义千问 · Kimi · 文心一言 · Claude Code
 
@@ -133,14 +196,25 @@ AI Agent 能力从浅到深，呈现阶梯式跃迁
   - **迭代追问**: 不满意就补充信息继续问
   - **结构化输出**: "请用表格列出..."
 
-> **关键认知**: 对话式 AI 是起点，不是终点。用好提示词（Prompt）是关键分水岭。
+> **关键认知**: 对话式 AI 是起点，不是终点。用好提示词是关键分水岭。
+
+</div>
+<div>
 
 ![](images/dialogue-products.svg)
+
+<div class="fig-caption">图：主流对话式 AI 产品生态</div>
+
+</div>
+</div>
 
 ---
 
 <!-- _class: contentPage -->
 <!-- _header: "1.2 让机器替你跑流程——自动化工作流" -->
+
+<div class="cols">
+<div>
 
 **代表平台**: Coze 工作流 · Dify · LangChain
 
@@ -155,7 +229,15 @@ AI Agent 能力从浅到深，呈现阶梯式跃迁
 
 > **一句话总结**: 把每次都要做的事变成一键搞定。
 
+</div>
+<div>
+
 ![](images/workflow-flow.svg)
+
+<div class="fig-caption">图：自动化工作流示意</div>
+
+</div>
+</div>
 
 ---
 
@@ -275,6 +357,8 @@ Coze（扣子）是字节跳动推出的 AI 智能体构建平台，零代码即
 
 ![](images/coze-qr.svg)
 
+<div class="fig-caption">图：扫码注册 Coze 智能体平台</div>
+
 ---
 
 <!-- _class: contentPage -->
@@ -294,6 +378,9 @@ Coze（扣子）是字节跳动推出的 AI 智能体构建平台，零代码即
 <!-- _class: contentPage -->
 <!-- _header: "2.3 给AI装上私域大脑——知识库与RAG" -->
 
+<div class="cols">
+<div>
+
 **上传资料 → 自动分段 → 向量检索 → 精准回答**
 
 - **支持格式**: PDF / Word / TXT / 网页链接 / 飞书文档 / 表格
@@ -301,15 +388,28 @@ Coze（扣子）是字节跳动推出的 AI 智能体构建平台，零代码即
 
 **场景示例**:
 ```
-公司员工手册.pdf → 上传知识库 → 员工提问 → Agent 检索内容 → 生成回答引用出处
+公司员工手册.pdf → 上传知识库
+→ 员工提问 → Agent 检索
+→ 生成回答引用出处
 ```
 
+</div>
+<div>
+
 ![](images/knowledge-rag.svg)
+
+<div class="fig-caption">图：RAG 知识库检索增强流程</div>
+
+</div>
+</div>
 
 ---
 
 <!-- _class: contentPage -->
 <!-- _header: "2.4 像搭积木一样编排流程——工作流自动化" -->
+
+<div class="cols">
+<div>
 
 **拖拽节点 → 配置逻辑 → 连接工具 → 一键运行**
 
@@ -323,9 +423,17 @@ Coze（扣子）是字节跳动推出的 AI 智能体构建平台，零代码即
 | 插件 | 调用外部工具 |
 | 结束 | 返回结果 |
 
-**案例**: 自动生成小红书笔记 — 输入主题 → 搜索热点 → 检索素材 → 生成文案 → 输出草稿
+**案例**: 输入主题 → 搜索热点 → 检索素材 → 生成文案 → 输出草稿
+
+</div>
+<div>
 
 ![](images/workflow-flow.svg)
+
+<div class="fig-caption">图：Coze 工作流节点编排示意</div>
+
+</div>
+</div>
 
 ---
 
@@ -348,12 +456,25 @@ Coze（扣子）是字节跳动推出的 AI 智能体构建平台，零代码即
 <!-- _class: contentPage -->
 <!-- _header: "2.6 让你的Agent无处不在——多渠道发布" -->
 
+<div class="cols">
+<div>
+
 - **飞书**: 直接在飞书群里当机器人用
 - **微信公众号**: 接入客服消息
 - **API**: 通过 HTTP 接口集成到自己的系统
 - **Web**: 嵌入网页，生成分享链接
 
+> 一次搭建，多渠道发布，让你的 Agent 触达每一位用户。
+
+</div>
+<div>
+
 ![](images/platform-publish.svg)
+
+<div class="fig-caption">图：Coze 多渠道发布矩阵</div>
+
+</div>
+</div>
 
 ---
 
@@ -442,6 +563,9 @@ Coze（扣子）是字节跳动推出的 AI 智能体构建平台，零代码即
 <!-- _class: contentPage -->
 <!-- _header: "3.2 杂货铺变身标准化仓库——异构数据清洗" -->
 
+<div class="cols">
+<div>
+
 **Agent 能做什么**:
 1. 自动下载各渠道文件
 2. OCR 识别提取关键字段
@@ -449,7 +573,15 @@ Coze（扣子）是字节跳动推出的 AI 智能体构建平台，零代码即
 4. 填入预设模板
 5. 标记异常待人工校验
 
+</div>
+<div>
+
 ![](images/invoice-flow.svg)
+
+<div class="fig-caption">图：发票处理自动化全流程</div>
+
+</div>
+</div>
 
 ---
 
