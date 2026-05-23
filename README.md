@@ -1,75 +1,102 @@
 # AI Tech Sharing PPT
 
-AI 技术分享会用的 PPT 脚手架 — 基于 **Marp** 生态，用 Markdown 写幻灯片。
+[![GitHub Pages](https://img.shields.io/badge/demo-GitHub%20Pages-blue)](https://syjsu.github.io/ai-tech-sharing-ppt/)
 
-当前主题：**zju**（浙大学术蓝），源码 `index.md` 可直接编译。
+AI 技术分享会 PPT 脚手架 — 基于 **Marp** 生态，用 Markdown 写专业幻灯片。零排版，专注内容。
+
+🖥 [在线预览](https://syjsu.github.io/ai-tech-sharing-ppt/)
 
 ## 快速开始
 
 ```bash
+# 1. 克隆项目
+git clone https://github.com/syjsu/ai-tech-sharing-ppt.git
+cd ai-tech-sharing-ppt
+
+# 2. 安装依赖
 npm install
+
+# 3. 编译并预览
 npm run build
 open index.html
 ```
 
-然后修改 `index.md` 开始写自己的内容。
+## 项目结构
+
+```
+index.md              # ← 幻灯片源码（从这里改）
+index.html            # 编译输出（GitHub Pages 入口）
+images/               # 示意图 SVG（10 张架构图/流程图）
+themes/
+  zju.css             # 当前默认主题（浙大学术蓝）
+  am_*.css            # 备用：Awesome-Marp 6 色主题
+  company*.css        # 备用：科技蓝/深蓝主题
+  images/zju/         # zju 主题背景图
+docs/                 # Marpit 官方中文手册
+```
 
 ## 命令
 
 | 命令 | 说明 |
 |------|------|
-| `npm run build` | 编译 `index.md` → `index.html` |
-| `npm run pdf` | 导出 PDF |
-| `npm run pptx` | 导出 PPTX |
-| `npm run preview` | 启动实时预览 |
+| `npm run build` | Markdown → HTML |
+| `npm run pdf` | 导出 PDF（需 Chrome） |
+| `npm run pptx` | 导出 PPTX（需 Chrome） |
+| `npm run preview` | 启动实时预览服务器 |
 
-## 项目结构
+## 如何写自己的 PPT
 
-```
-index.md              # 幻灯片源文件（从这里改）
-index.html            # 生成的 HTML
-images/               # 幻灯片示意图（SVG/PNG）
-themes/               # 主题 CSS + zju 背景图片
-  am_blue/brown/dark/green/purple/red.css   # Awesome-Marp 6 色
-  companyLightBlue/companySZ.css            # 科技蓝/深蓝
-  zju.css                                   # 浙大学术蓝（当前使用）
-  am_template.css                           # Awesome-Marp 模板
-  images/zju/                               # zju 主题背景图片
-docs/                 # Marpit 官方文档手册
+### 1. 切换主题
+
+修改 `index.md` 的 YAML 头部：
+
+```yaml
+---
+theme: zju          # zju / am_blue / am_green / companyLightBlue ...
+---
 ```
 
-## 主题切换
+### 2. 使用版式
 
-在 `index.md` YAML 头部修改 `theme:` 字段：
+zju 主题提供以下布局：
 
-可选主题：`am_blue` `am_green` `am_purple` `am_red` `am_brown` `am_dark` `companyLightBlue` `companySZ` `zju`
+| 指令 | 效果 |
+|------|------|
+| `<!-- _class: homePage -->` | 深蓝封面页 |
+| `<!-- _class: contents -->` | 深蓝目录页 |
+| `<!-- _class: contentPage -->` | 渐变蓝正文页 |
+| `<!-- _header: "标题" -->` | 正文页蓝色顶栏标题 |
 
-来源：[Awesome-Marp](https://github.com/favourhong/Awesome-Marp) · [marp-themes](https://github.com/zhaoluting/marp-themes)
+### 3. 插入图片
 
-## 当前 zju 主题版式
-
-| 版式 | 效果 | 用法 |
-|------|------|------|
-| `homePage` | 封面 / 章节过渡 | `<!-- _class: homePage -->` |
-| `contents` | 目录页 | `<!-- _class: contents -->` |
-| `contentPage` | 正文（无 header） | `<!-- _class: contentPage -->` |
-| 正文 header | 蓝色顶栏标题 | `<!-- _header: "标题名" -->` |
-
-## 导出 PPTX/PDF
-
-```bash
-npm run pptx    # → slides.pptx
-npm run pdf     # → slides.pdf
+```markdown
+![](images/your-image.svg)
 ```
 
-依赖 Chrome 渲染引擎。
+### 4. 替换内容
+
+直接编辑 `index.md`，替换占位文字即可。Markdown 基础语法 + 少量指令 = 专业幻灯片。
+
+## 主题来源
+
+| 主题集 | 主题 | 源仓库 |
+|--------|------|--------|
+| 浙大学术蓝 | `zju` | [zhaoluting/marp-themes](https://github.com/zhaoluting/marp-themes) |
+| Awesome-Marp 6 色 | `am_blue/brown/dark/green/purple/red` | [favourhong/Awesome-Marp](https://github.com/favourhong/Awesome-Marp) |
+| 科技蓝/深蓝 | `companyLightBlue` `companySZ` | [zhaoluting/marp-themes](https://github.com/zhaoluting/marp-themes) |
 
 ## 常见问题
 
-### 图片不显示
-Chrome `file://` 协议限制本地资源加载。确保图片路径相对 markdown 文件：
-- `index.md` 引用 `images/xxx.svg` — 正确
-- `themes/zju.css` 引用 `images/zju/xxx.png` — 正确（相对 themes/ 本身）
+**图片不显示？** 用 `open index.html` 直接打开，或用 `npm run preview` 启动本地服务器。GitHub Pages 直接打开即可。
 
-### Header 不显示
-须用 `<!-- _header: "标题" -->` 指令，不能用 HTML `<header>` 标签。
+**怎么导出 PDF/PPTX？** 确保 Chrome 已安装，运行 `npm run pdf` 或 `npm run pptx`。
+
+**Header 不显示？** 必须用 `<!-- _header: "标题" -->` 指令，不能写 `<header>` HTML 标签。
+
+## 参考文档
+
+本地 `docs/` 目录包含 Marpit 官方中文完整手册。
+
+## License
+
+MIT
