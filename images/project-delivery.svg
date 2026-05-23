@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f8faff"/><stop offset="100%" stop-color="#e8eff8"/></linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#003f88"/><stop offset="100%" stop-color="#0056b3"/></linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2e7d32"/><stop offset="100%" stop-color="#43a047"/></linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="12" fill="url(#bg)" stroke="#d0d8e8" stroke-width="1"/>
+  <text x="200" y="24" text-anchor="middle" font-size="14" font-weight="bold" fill="#003f88">从需求到 MVP 交付</text>
+  <!-- Row 1 -->
+  <rect x="30" y="50" width="100" height="40" rx="10" fill="#e0e0e0"/>
+  <text x="80" y="68" text-anchor="middle" font-size="11" fill="#555">需求理解</text>
+  <text x="80" y="82" text-anchor="middle" font-size="8" fill="#888">What &amp; Why</text>
+  <rect x="155" y="50" width="100" height="40" rx="10" fill="#e3f0ff"/>
+  <text x="205" y="68" text-anchor="middle" font-size="11" fill="#003f88">方案设计</text>
+  <text x="205" y="82" text-anchor="middle" font-size="8" fill="#668">架构选型</text>
+  <rect x="280" y="50" width="90" height="40" rx="10" fill="#e3f0ff"/>
+  <text x="325" y="68" text-anchor="middle" font-size="11" fill="#003f88">编码开发</text>
+  <text x="325" y="82" text-anchor="middle" font-size="8" fill="#668">代码+数据库</text>
+  <!-- Arrows -->
+  <polygon points="132,64 140,70 132,76" fill="#aaa"/>
+  <polygon points="257,64 265,70 257,76" fill="#aaa"/>
+  <!-- Row 2 -->
+  <path d="M 325 90 L 325 112" stroke="#aaa" stroke-width="1.2"/>
+  <rect x="280" y="115" width="90" height="40" rx="10" fill="#e3f0ff"/>
+  <text x="325" y="133" text-anchor="middle" font-size="11" fill="#003f88">部署上线</text>
+  <text x="325" y="147" text-anchor="middle" font-size="8" fill="#668">云端/服务器</text>
+  <polygon points="278,129 270,135 278,141" fill="#aaa"/>
+  <rect x="155" y="115" width="100" height="40" rx="10" fill="url(#green)" opacity="0.9"/>
+  <text x="205" y="133" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">MVP 交付</text>
+  <text x="205" y="147" text-anchor="middle" font-size="8" fill="#e0ffe0">最小可用产品</text>
+  <polygon points="153,129 145,135 153,141" fill="#aaa"/>
+  <rect x="30" y="115" width="100" height="40" rx="10" fill="#e8f5e9"/>
+  <text x="80" y="133" text-anchor="middle" font-size="11" fill="#2e7d32">用户反馈</text>
+  <text x="80" y="147" text-anchor="middle" font-size="8" fill="#558">试用→迭代</text>
+  <!-- Loop -->
+  <path d="M 80 155 Q 80 190 200 190 Q 320 190 340 155" fill="none" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="200" y="208" text-anchor="middle" font-size="10" fill="#2e7d32">持续迭代循环</text>
+  <rect x="70" y="225" width="260" height="50" rx="8" fill="#003f88" opacity="0.08"/>
+  <text x="200" y="244" text-anchor="middle" font-size="11" fill="#003f88">Agent 从助手 → 开发者</text>
+  <text x="200" y="262" text-anchor="middle" font-size="10" fill="#555">理解需求 · 设计架构 · 编写代码 · 部署交付</text>
+</svg>
