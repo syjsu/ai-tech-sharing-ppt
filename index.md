@@ -33,6 +33,26 @@ style: |
     width: auto;
     margin: 0 auto 20px auto;
   }
+  :root.homePage.part1bg::before {
+    background-image: url("themes/images/gdut/background5.jpg");
+  }
+  :root.homePage.part2bg::before {
+    background-image: url("themes/images/gdut/background6.jpg");
+  }
+  :root.homePage.part3bg::before {
+    background-image: url("themes/images/gdut/background7.jpg");
+  }
+  :root.homePage .footnote {
+    position: absolute;
+    bottom: 12px;
+    right: 26px;
+    font-size: 10px;
+    color: rgba(255,255,255,0.3);
+    text-align: right;
+  }
+  :root.homePage .footnote a {
+    color: #fff;
+  }
 ---
 
 <!-- _class: homePage -->
@@ -45,6 +65,10 @@ style: |
 ## 5.24 得到同学节分享
 
 **分享人：@天街小雨润如苏同学　｜　2026 年 5 月**
+
+<div class="footnote">
+  * 内容由 AI 生成，源码托管在 <a href="https://github.com/syjsu/ai-tech-sharing-ppt">https://github.com/syjsu/ai-tech-sharing-ppt</a>
+</div>
 
 ---
 
@@ -61,8 +85,19 @@ style: |
 
 ---
 
+<!-- _class: homePage part1bg -->
+<!-- _header: "" -->
+<!-- _footer: "" -->
+<!-- _paginate: "" -->
+
+# Part 1
+
+## 普通人使用 AI Agent 的六个维度
+
+---
+
 <!-- _class: contentPage -->
-<!-- _header: "Part 1 · 六个维度总览" -->
+<!-- _header: "Part 1 总览" -->
 
 AI Agent 能力从浅到深，呈现阶梯式跃迁
 
@@ -85,7 +120,7 @@ AI Agent 能力从浅到深，呈现阶梯式跃迁
 ---
 
 <!-- _class: contentPage -->
-<!-- _header: "第一层 · 对话式 AI" -->
+<!-- _header: "1.1 初踏殿堂的体验——对话式AI" -->
 
 **核心产品**: DeepSeek · 豆包 · 通义千问 · Kimi · 文心一言 · Claude Code
 
@@ -105,7 +140,7 @@ AI Agent 能力从浅到深，呈现阶梯式跃迁
 ---
 
 <!-- _class: contentPage -->
-<!-- _header: "第二层 · 自动化工作流" -->
+<!-- _header: "1.2 让机器替你跑流程——自动化工作流" -->
 
 **代表平台**: Coze 工作流 · Dify · LangChain
 
@@ -125,7 +160,7 @@ AI Agent 能力从浅到深，呈现阶梯式跃迁
 ---
 
 <!-- _class: contentPage -->
-<!-- _header: "第三层 · 自主 Agent" -->
+<!-- _header: "1.3 给AI装上自己的大脑——自主Agent" -->
 
 **代表平台**: Coze Agent · Trae Solo · AutoGPT
 
@@ -139,7 +174,7 @@ AI Agent 能力从浅到深，呈现阶梯式跃迁
 ---
 
 <!-- _class: contentPage -->
-<!-- _header: "第四层 · 项目落地" -->
+<!-- _header: "1.4 从想法到可用的产品——项目落地" -->
 
 **本质**: Agent 不仅能回答问题、执行任务，还能理解用户需求、开发定制化技术产品
 
@@ -154,7 +189,7 @@ AI Agent 能力从浅到深，呈现阶梯式跃迁
 ---
 
 <!-- _class: contentPage -->
-<!-- _header: "第五层 · 系统建设" -->
+<!-- _header: "1.5 打造完整的数字工厂——系统建设" -->
 
 **本质**: 在第四层基础上，构建完整可用、可扩展、可维护的系统级解决方案
 
@@ -168,7 +203,7 @@ AI Agent 能力从浅到深，呈现阶梯式跃迁
 ---
 
 <!-- _class: contentPage -->
-<!-- _header: "第六层 · 高阶生活助理" -->
+<!-- _header: "1.6 全天候在线的隐形管家——高阶生活助理" -->
 
 **理想形态**: 全天候在线，主动感知用户需求，跨设备、跨平台无缝协同，记忆用户偏好、习惯、历史决策，复杂问题自主规划，简单问题即时响应
 
@@ -177,7 +212,7 @@ AI Agent 能力从浅到深，呈现阶梯式跃迁
 ---
 
 <!-- _class: contentPage -->
-<!-- _header: "Part 1 · 小结" -->
+<!-- _header: "Part 1 小结" -->
 
 | 层级 | 模式 | 代表 | 关键词 |
 |:----:|------|------|--------|
@@ -192,7 +227,7 @@ AI Agent 能力从浅到深，呈现阶梯式跃迁
 
 ---
 
-<!-- _class: homePage -->
+<!-- _class: homePage part2bg -->
 <!-- _header: "" -->
 <!-- _footer: "" -->
 <!-- _paginate: "" -->
@@ -204,7 +239,25 @@ AI Agent 能力从浅到深，呈现阶梯式跃迁
 ---
 
 <!-- _class: contentPage -->
-<!-- _header: "Coze 是什么？" -->
+<!-- _header: "Part 2 总览" -->
+
+Coze 智能体构建六步走
+
+| 步骤 | 核心动作 | 关键词 |
+|:----:|------|------|
+| ① | 平台初识 | 零代码 AI 乐高工厂 |
+| ② | 角色设计 | 给 AI 写灵魂简历 |
+| ③ | 知识库构建 | 给 AI 装上私域大脑 |
+| ④ | 工作流编排 | 搭积木一样搭流程 |
+| ⑤ | 插件扩展 | 让 Agent 从会说到能干 |
+| ⑥ | 发布与生态 | 一键发布 + 商店发现 |
+
+> 人设 + 知识 + 工作流 + 插件 = 真正能干活的生产力智能体
+
+---
+
+<!-- _class: contentPage -->
+<!-- _header: "2.1 零代码的AI乐高工厂——Coze平台初识" -->
 
 Coze（扣子）是字节跳动推出的 AI 智能体构建平台，零代码即可创建功能强大的 AI Bot
 
@@ -225,7 +278,7 @@ Coze（扣子）是字节跳动推出的 AI 智能体构建平台，零代码即
 ---
 
 <!-- _class: contentPage -->
-<!-- _header: "Step 1 · 创建智能体 · 角色设计" -->
+<!-- _header: "2.2 给AI写一份灵魂简历——角色设计" -->
 
 **选择模板 → 设定人设 → 配置能力 → 调试优化**
 
@@ -239,7 +292,7 @@ Coze（扣子）是字节跳动推出的 AI 智能体构建平台，零代码即
 ---
 
 <!-- _class: contentPage -->
-<!-- _header: "Step 2 · 知识库构建 · RAG 增强" -->
+<!-- _header: "2.3 给AI装上私域大脑——知识库与RAG" -->
 
 **上传资料 → 自动分段 → 向量检索 → 精准回答**
 
@@ -256,7 +309,7 @@ Coze（扣子）是字节跳动推出的 AI 智能体构建平台，零代码即
 ---
 
 <!-- _class: contentPage -->
-<!-- _header: "Step 3 · 工作流编排 · 自动化" -->
+<!-- _header: "2.4 像搭积木一样编排流程——工作流自动化" -->
 
 **拖拽节点 → 配置逻辑 → 连接工具 → 一键运行**
 
@@ -277,7 +330,7 @@ Coze（扣子）是字节跳动推出的 AI 智能体构建平台，零代码即
 ---
 
 <!-- _class: contentPage -->
-<!-- _header: "Step 4 · 插件工具集 · 能力扩展" -->
+<!-- _header: "2.5 给AI装上万能工具箱——插件能力扩展" -->
 
 | 分类 | 插件示例 |
 |------|----------|
@@ -293,7 +346,7 @@ Coze（扣子）是字节跳动推出的 AI 智能体构建平台，零代码即
 ---
 
 <!-- _class: contentPage -->
-<!-- _header: "Step 5 · 多渠道发布 · 触达用户" -->
+<!-- _header: "2.6 让你的Agent无处不在——多渠道发布" -->
 
 - **飞书**: 直接在飞书群里当机器人用
 - **微信公众号**: 接入客服消息
@@ -305,7 +358,7 @@ Coze（扣子）是字节跳动推出的 AI 智能体构建平台，零代码即
 ---
 
 <!-- _class: contentPage -->
-<!-- _header: "Step 6 · Bot Store · 智能体市场" -->
+<!-- _header: "2.7 像逛应用商店一样找AI——智能体市场" -->
 
 **Bot Store（智能体商店）**: 发现他人创作的优质智能体，一键复制使用，支持二次改造
 
@@ -316,7 +369,7 @@ Coze（扣子）是字节跳动推出的 AI 智能体构建平台，零代码即
 ---
 
 <!-- _class: contentPage -->
-<!-- _header: "Part 2 · 小结" -->
+<!-- _header: "Part 2 小结" -->
 
 | 步骤 | 能力 | 一句话 |
 |:----:|------|--------|
@@ -331,8 +384,36 @@ Coze（扣子）是字节跳动推出的 AI 智能体构建平台，零代码即
 
 ---
 
+<!-- _class: homePage part3bg -->
+<!-- _header: "" -->
+<!-- _footer: "" -->
+<!-- _paginate: "" -->
+
+# Part 3
+
+## 需求挖掘与小班课预告
+
+---
+
 <!-- _class: contentPage -->
-<!-- _header: "Part 3 · STAR 法梳理需求" -->
+<!-- _header: "Part 3 总览" -->
+
+从需求到交付的全流程实战
+
+| 环节 | 核心方法 | 关键词 |
+|:----:|------|------|
+| ① | STAR 需求梳理 | Situation → Task → Action → Result |
+| ② | 真实案例拆解 | 发票报销全流程 |
+| ③ | 深层次需求挖掘 | 冰山模型 · 追问五法 |
+| ④ | Agent 极速 MVP | 传统 2 周 → Agent 1 天 |
+| ⑤ | 小班课实战 | 从观众到主角 |
+
+> 80% 的需求失败不是因为做不了，而是因为需求本身没梳理清楚。
+
+---
+
+<!-- _class: contentPage -->
+<!-- _header: "Part 3 STAR 法梳理需求" -->
 
 | 要素 | 含义 | 对应 |
 |:----:|------|------|
@@ -346,7 +427,7 @@ Coze（扣子）是字节跳动推出的 AI 智能体构建平台，零代码即
 ---
 
 <!-- _class: contentPage -->
-<!-- _header: "案例：发票报销需求" -->
+<!-- _header: "3.1 一百张发票的烦恼——真实需求案例" -->
 
 **一位同学的真实场景**
 
@@ -359,7 +440,7 @@ Coze（扣子）是字节跳动推出的 AI 智能体构建平台，零代码即
 ---
 
 <!-- _class: contentPage -->
-<!-- _header: "异构数据源 → 统一模板" -->
+<!-- _header: "3.2 杂货铺变身标准化仓库——异构数据清洗" -->
 
 **Agent 能做什么**:
 1. 自动下载各渠道文件
@@ -373,7 +454,7 @@ Coze（扣子）是字节跳动推出的 AI 智能体构建平台，零代码即
 ---
 
 <!-- _class: contentPage -->
-<!-- _header: "审核流程 → 报表呈现" -->
+<!-- _header: "3.3 从人工核对到一键出表——审核与报表" -->
 
 **处理流程**: 原始数据 → 规则校验 → 异常标记 → 人工复核 → 最终报表
 
@@ -385,7 +466,7 @@ Coze（扣子）是字节跳动推出的 AI 智能体构建平台，零代码即
 ---
 
 <!-- _class: contentPage -->
-<!-- _header: "挖掘深层次需求" -->
+<!-- _header: "3.4 冰山下的真相——深层次需求挖掘" -->
 
 | 追问 | 发现的新需求 |
 |------|-------------|
@@ -401,7 +482,7 @@ Coze（扣子）是字节跳动推出的 AI 智能体构建平台，零代码即
 ---
 
 <!-- _class: contentPage -->
-<!-- _header: "Agent 快速搭建 MVP" -->
+<!-- _header: "3.5 两周变一天的魔法——Agent极速MVP" -->
 
 **传统开发流程**: 需求沟通 → 写文档 → 排期 → 开发（2周） → 测试 → 上线
 
@@ -412,13 +493,13 @@ Coze（扣子）是字节跳动推出的 AI 智能体构建平台，零代码即
 ---
 
 <!-- _class: contentPage -->
-<!-- _header: "小班课预告" -->
+<!-- _header: "3.6 从观众到主角的蜕变——小班课预告" -->
 
 **从需求洞察到交付落地的全流程实战**
 
 - **实战驱动**: 不教理论，直接拿真实需求开练
 - **全链路覆盖**: 需求调研 → STAR 梳理 → 方案设计 → Agent 搭建 → 交付验收
-- **小班教学**: 每期限额，一对一指导
+- **小班教学**: 每期限额，精细化项目制指导
 - **成果交付**: 课程结束时，你手上有一个真正跑起来的系统
 
 **适合人群**:
@@ -426,7 +507,20 @@ Coze（扣子）是字节跳动推出的 AI 智能体构建平台，零代码即
 - 想转型 AI 产品经理/解决方案的从业者
 - 对 Agent 开发感兴趣的技术爱好者
 
-![](images/coze-qr.svg)
+---
+
+<!-- _class: contentPage -->
+<!-- _header: "Part 3 小结" -->
+
+| 环节 | 要点 | 一句话 |
+|:----:|------|--------|
+| ① | STAR 梳理 | 先搞清楚问题，再动手解决 |
+| ② | 案例实战 | 从发票场景看 Agent 全链路能力 |
+| ③ | 需求挖掘 | 表面需求之下藏着更大的系统 |
+| ④ | Agent MVP | 两周变一天，不是口号是事实 |
+| ⑤ | 小班课 | 不做观众，做 Agent 时代的创建者 |
+
+> 不是工具变强了，是你的使用方式升级了。
 
 ---
 
