@@ -1,0 +1,11 @@
+node_modules/
+.cache/
+output/
+node_modules/
+.cache/
+output/
+!index.html
+*.pptx
+*.pdf
+.DS_Store
+.DS_Store

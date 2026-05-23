@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320">
+  <rect x="10" y="10" width="400" height="300" rx="10" fill="#f0f6ff" stroke="#b3d4fc"/>
+  <text x="30" y="40" fill="#333" font-size="14" font-weight="bold">主流 AI 对话产品</text>
+  <rect x="30" y="55" width="160" height="40" rx="8" fill="#0288d1"/>
+  <text x="45" y="80" fill="white" font-size="13" font-weight="bold">DeepSeek</text>
+  <rect x="215" y="55" width="160" height="40" rx="8" fill="#00695c"/>
+  <text x="230" y="80" fill="white" font-size="13" font-weight="bold">豆包</text>
+  <rect x="30" y="108" width="160" height="40" rx="8" fill="#e65100"/>
+  <text x="45" y="133" fill="white" font-size="13" font-weight="bold">通义千问</text>
+  <rect x="215" y="108" width="160" height="40" rx="8" fill="#6a1b9a"/>
+  <text x="230" y="133" fill="white" font-size="13" font-weight="bold">Kimi</text>
+  <rect x="30" y="161" width="160" height="40" rx="8" fill="#b71c1c"/>
+  <text x="45" y="186" fill="white" font-size="13" font-weight="bold">文心一言</text>
+  <rect x="215" y="161" width="160" height="40" rx="8" fill="#ff8f00"/>
+  <text x="230" y="186" fill="white" font-size="13" font-weight="bold">Claude Code</text>
+  <text x="30" y="230" fill="#555" font-size="12">核心能力：多轮对话、代码生成、文档撰写、翻译</text>
+  <text x="30" y="250" fill="#555" font-size="12">使用技巧：明确角色 + 提供上下文 + 迭代追问</text>
+  <text x="30" y="275" fill="#888" font-size="11">提示词 Prompt 是关键分水岭</text>
+</svg>

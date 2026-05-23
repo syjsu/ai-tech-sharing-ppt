@@ -1,0 +1,18 @@
+{
+  "name": "ai-tech-sharing-ppt",
+  "version": "1.0.0",
+  "description": "AI 技术分享会 PPT 脚手架 — 基于 Marp/Marpit，用 Markdown 写幻灯片，支持自定义主题和导出 HTML/PDF/PPTX",
+  "scripts": {
+    "build": "./build.sh",
+    "preview": "marp -s .",
+    "pdf": "marp index.md --pdf --theme-set themes/*.css --allow-local-files -o slides.pdf",
+    "pptx": "marp index.md --pptx --theme-set themes/*.css --allow-local-files -o slides.pptx"
+  },
+  "keywords": ["marp", "marpit", "slide", "ai", "presentation", "markdown"],
+  "author": "苏同学",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.1.0"
+  }
+}

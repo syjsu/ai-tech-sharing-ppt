@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320">
+  <rect x="10" y="10" width="400" height="300" rx="10" fill="#fafafa" stroke="#ddd"/>
+  <text x="30" y="38" fill="#333" font-size="14" font-weight="bold">能力跃迁阶梯</text>
+  <rect x="30" y="55" width="360" height="35" rx="6" fill="#0288d1"/>
+  <text x="45" y="77" fill="white" font-size="12">需求理解 → 技术方案 → 代码开发 → MVP 交付</text>
+  <rect x="30" y="98" width="360" height="35" rx="6" fill="#00695c"/>
+  <text x="45" y="120" fill="white" font-size="12">多模块设计 → 权限安全 → 系统集成 → 持续运维</text>
+  <rect x="30" y="141" width="360" height="35" rx="6" fill="#6a1b9a"/>
+  <text x="45" y="163" fill="white" font-size="12">全场景沟通 → 主动感知 → 跨设备协同 → 记忆决策</text>
+  <rect x="30" y="195" width="170" height="40" rx="8" fill="#ff8f00"/>
+  <text x="50" y="220" fill="white" font-size="12">从工具到助手</text>
+  <rect x="220" y="195" width="170" height="40" rx="8" fill="#e53935"/>
+  <text x="240" y="220" fill="white" font-size="12">从助手到伙伴</text>
+  <rect x="125" y="250" width="170" height="40" rx="8" fill="#1b5e20"/>
+  <text x="145" y="275" fill="white" font-size="12">从伙伴到开发者</text>
+</svg>

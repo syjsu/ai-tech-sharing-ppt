@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300">
+  <rect x="10" y="10" width="400" height="280" rx="10" fill="#f5f0ff" stroke="#d0bfff"/>
+  <circle cx="210" cy="60" r="35" fill="#0288d1"/>
+  <text x="175" y="56" fill="white" font-size="11">Coze</text>
+  <text x="178" y="70" fill="white" font-size="10">智能体</text>
+  <rect x="65" y="125" width="110" height="45" rx="8" fill="#00695c"/>
+  <text x="80" y="148" fill="white" font-size="11">飞书机器人</text>
+  <text x="80" y="162" fill="#ddd" font-size="10">团队协作</text>
+  <rect x="155" y="195" width="110" height="45" rx="8" fill="#e65100"/>
+  <text x="170" y="218" fill="white" font-size="11">微信公众号</text>
+  <text x="170" y="232" fill="#ddd" font-size="10">粉丝互动</text>
+  <rect x="245" y="125" width="110" height="45" rx="8" fill="#6a1b9a"/>
+  <text x="255" y="148" fill="white" font-size="11">API / Web</text>
+  <text x="255" y="162" fill="#ddd" font-size="10">嵌入产品</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300">
+  <rect x="10" y="10" width="400" height="280" rx="10" fill="#f5faf5" stroke="#b7d7b7"/>
+  <text x="25" y="38" fill="#333" font-size="14" font-weight="bold">知识库 + RAG 工作流程</text>
+  <rect x="25" y="55" width="110" height="35" rx="6" fill="#0288d1"/>
+  <text x="30" y="77" fill="white" font-size="10">用户提问</text>
+  <line x1="135" y1="72" x2="165" y2="72" stroke="#0288d1" stroke-width="2"/>
+  <rect x="170" y="55" width="110" height="35" rx="6" fill="#00695c"/>
+  <text x="178" y="77" fill="white" font-size="10">语义检索</text>
+  <line x1="280" y1="72" x2="310" y2="72" stroke="#0288d1" stroke-width="2"/>
+  <rect x="310" y="55" width="80" height="35" rx="6" fill="#e65100"/>
+  <text x="320" y="77" fill="white" font-size="10">知识召回</text>
+  <rect x="90" y="115" width="200" height="60" rx="8" fill="#fff" stroke="#333" stroke-width="1.5"/>
+  <text x="100" y="138" fill="#333" font-size="12" font-weight="bold">知识库存储</text>
+  <text x="100" y="156" fill="#555" font-size="10">PDF Word 网页 飞书文档 表格</text>
+  <rect x="90" y="195" width="200" height="50" rx="8" fill="#1b5e20"/>
+  <text x="100" y="216" fill="white" font-size="12" font-weight="bold">LLM + 上下文</text>
+  <text x="100" y="232" fill="#ddd" font-size="10">生成精准回答 引用原文出处</text>
+  <text x="25" y="270" fill="#888" font-size="11">减少幻觉 回答有据可依 私域大脑</text>
+</svg>
